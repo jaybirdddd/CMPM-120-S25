@@ -1,0 +1,108 @@
+{
+    "Title": "Attending Class and Doing Homework on the West Side",
+    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
+    "InitialLocation": "Kresge",
+    "Locations": {
+        "Kresge": {
+            "Body": "This is Kresge College, lots of nice trees.",
+            "Place": "Kresge",
+            "Choices": [
+                {
+                    "Text": "South",
+                    "Target": "Porter"
+                }
+            ]
+        },
+        "Porter": {
+            "Body": "This is Porter College, the trees are nice here too.",
+            "Place": "Porter",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Kresge"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "Enter Dorm",
+                    "Target": "Dorm"
+                }
+            ]
+        },
+        "Dorm":{
+            "Body": "This is your dorm. It's messy but it's the place you spend the most time.",
+            "Place": "Dorm",
+            "Choices": [
+                {
+                    "Text": "Leave Dorm",
+                    "Target": "Porter"
+                },
+                {
+                    "Text": "Head to the desk to complete Homework",
+                    "Target": "Desk"
+                }
+            ]
+        },
+        "Desk": {
+            "Body": "You sit down at your desk and finish homework. Your homework is done!",
+            "Place": "Desk"
+        },
+        "Rachel Carson": {
+            "Body": "Rachel Carson College, more sun and fewer trees.",
+            "Place": "Rachel Carson College",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Porter"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Oakes"
+                }
+            ]
+        },
+        "Oakes": {
+            "Body": "Oakes College, even the buildings have tree bark on them.",
+            "Place":"Oakes",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Beyond"
+                },
+                {
+                    "Text": "Enter Classrooms",
+                    "Target": "Oakes Academy"
+                }
+            ]
+        },
+        "Oakes Academy": {
+            "Body": "This is where your current class is.",
+            "Place": "Oakes Academy",
+            "Choices": [
+                {
+                    "Text": "Go back to Oakes",
+                    "Target": "Oakes"
+                },
+                {
+                    "Text":"Attend Class"
+                }
+            ]
+        },
+        "Beyond": {
+            "Body": "Grass, don't forget to check for ticks!",
+            "Place": "Beyond",
+            "Choices": [ 
+                {
+                "Text": "Return to campus",
+                "Target": "Oakes"
+                }
+            ]
+        }
+    }
+}
